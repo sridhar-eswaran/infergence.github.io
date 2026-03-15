@@ -1,0 +1,167 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home">
+  
+  <!-- 1. Dark Tech Hero Section -->
+  <section class="bg-dark" style="padding: 12rem 0 8rem; position: relative; overflow: hidden;">
+    <!-- High-Fidelity Background Image Overlay -->
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(180deg, rgba(11,11,11,0.5) 0%, rgba(11,11,11,1) 100%), url('/images/home_hero_1773593582443.png') no-repeat center center; background-size: cover; z-index: 0; opacity: 0.5;"></div>
+    
+    <div class="container relative z-10 animate-fade-in">
+      <p class="text-green" style="font-weight: 600; margin-bottom: 1rem; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem;">
+        AI Solution provider & Big Data Experts Company
+      </p>
+      <h1 style="max-width: 800px; margin-bottom: 2.5rem; font-size: 4.5rem; line-height: 1.05;">
+        Driving changes through <br/>Data solutions
+      </h1>
+      <div style="display: flex; gap: 1.5rem; margin-bottom: 6rem;">
+        <a href="/case-studies" class="btn btn-outline">Read case studies</a>
+        <a href="mailto:contact@infergence.com" class="btn btn-primary">Let's talk</a>
+      </div>
+
+      <!-- Overlapping Bottom Cards -->
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+        <div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Data Consulting</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Discover Data's practical advantages with custom architecture.</p>
+        </div>
+        <div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Generative AI</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Adapt cutting-edge LLMs to your business needs.</p>
+        </div>
+        <div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Big Data</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Transform massive datasets into actionable business insights.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Core Capabilities (Services Grid) -->
+  <section class="bg-light" style="padding: 8rem 0;">
+    <div class="container animate-fade-in" style="display: flex; flex-direction: column; gap: 4rem;">
+      <div style="text-align: center;">
+        <h2 style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 1rem;">Our core capabilities</h2>
+        <p style="color: var(--text-muted); font-size: 1.25rem; max-width: 700px; margin: 0 auto;">Specialized engineering pods ready to tackle the hardest problems.</p>
+      </div>
+      
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+        
+        <a href="/services" class="addepto-card" style="padding: 0; overflow: hidden; display: block; text-decoration: none;">
+          <img src="/images/service_ai_1773592575907.png" alt="AI Consulting" style="width: 100%; height: 180px; object-fit: cover; display: block;" />
+          <div style="padding: 2rem;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">AI Consulting</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Strategic guidance on implementing Artificial Intelligence models tailored to optimize your specific operational bottlenecks.</p>
+          </div>
+        </a>
+
+        <a href="/services" class="addepto-card" style="padding: 0; overflow: hidden; display: block; text-decoration: none;">
+          <img src="/images/service_data_1773592594540.png" alt="Data Engineering" style="width: 100%; height: 180px; object-fit: cover; display: block;" />
+          <div style="padding: 2rem;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Data Engineering</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">End-to-end data pipeline construction handling massive scale and complexity with absolute reliability.</p>
+          </div>
+        </a>
+
+        <a href="/services" class="addepto-card" style="padding: 0; overflow: hidden; display: block; text-decoration: none;">
+          <img src="/images/service_cloud_1773592611307.png" alt="Cloud Solutions" style="width: 100%; height: 180px; object-fit: cover; display: block;" />
+          <div style="padding: 2rem;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Cloud Solutions</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Seamless transition of legacy systems to modern, scalable cloud stacks including AWS, GCP, and Azure.</p>
+          </div>
+        </a>
+
+        <a href="/services" class="addepto-card" style="padding: 0; overflow: hidden; display: block; text-decoration: none;">
+          <img src="/images/service_devops_1773593596662.png" alt="DevOps Solutions" style="width: 100%; height: 180px; object-fit: cover; display: block;" />
+          <div style="padding: 2rem;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">DevOps Solutions</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Automating CI/CD pipelines, containerization, and DevSecOps processes for rapid, secure deployments.</p>
+          </div>
+        </a>
+
+        <a href="/services" class="addepto-card" style="padding: 0; overflow: hidden; display: block; text-decoration: none;">
+          <img src="/images/service_product_1773593611835.png" alt="Product Engineering" style="width: 100%; height: 180px; object-fit: cover; display: block;" />
+          <div style="padding: 2rem;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Product Engineering</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">From rapid MVP prototyping to full-scale web and mobile ecosystems engineered for high performance.</p>
+          </div>
+        </a>
+
+        <a href="/services" class="addepto-card" style="padding: 0; overflow: hidden; display: block; text-decoration: none;">
+          <img src="/images/blog_streaming_1773592154557.png" alt="Real-time Streaming" style="width: 100%; height: 180px; object-fit: cover; display: block;" />
+          <div style="padding: 2rem;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Real-time Streaming</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Unlocking sub-second analytics and event-driven architectures using Kafka and Flink.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 & 4. Case Studies & Industries -->
+  <section class="bg-white" style="padding: 8rem 0; border-bottom: 1px solid var(--bg-light);">
+    <div class="container text-center animate-fade-in">
+      <h2 style="font-size: 3rem; margin-bottom: 4rem;">Customer stories</h2>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; justify-content: center; text-align: left;">
+        <a href="/case-studies" class="addepto-card" style="padding: 0; overflow: hidden; display: block;">
+          <img src="/images/case_study_logistics_1773592215755.png" alt="Global Supply Chain Logistics" style="width: 100%; height: 250px; object-fit: cover; display: block;" />
+          <div style="padding: 2.5rem;">
+            <span style="color: var(--accent-green); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Logistics & Supply Chain</span>
+            <h3 style="font-size: 1.5rem; margin: 0.5rem 0 1.5rem; color: var(--text-dark);">Optimizing Global Routes with Real-time IoT Data</h3>
+            <span class="text-green" style="font-weight: 600;">Read full case study &rarr;</span>
+          </div>
+        </a>
+        <a href="/case-studies" class="addepto-card" style="padding: 0; overflow: hidden; display: block;">
+          <img src="/images/case_study_finance_1773592199327.png" alt="Financial Dashboard" style="width: 100%; height: 250px; object-fit: cover; display: block;" />
+          <div style="padding: 2.5rem;">
+            <span style="color: var(--accent-green); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Financial Services</span>
+            <h3 style="font-size: 1.5rem; margin: 0.5rem 0 1.5rem; color: var(--text-dark);">Predictive Risk Analytics for Institutional Portfolios</h3>
+            <span class="text-green" style="font-weight: 600;">Read full case study &rarr;</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Cooperation Models -->
+  <section class="bg-dark" style="padding: 8rem 0; text-align: center;">
+    <div class="container animate-fade-in">
+      <h2 style="font-size: 3.5rem; margin-bottom: 4rem;">Cooperation models</h2>
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; text-align: left;">
+        
+        <div class="addepto-card" style="position: relative; padding: 4rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--border-radius-sm);">
+          <span style="display: inline-block; width: 48px; height: 48px; background: rgba(31, 142, 61, 0.2); color: var(--accent-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 2rem;">👥</span>
+          <h3 style="font-size: 2rem; margin-bottom: 1rem;">Dedicated Team</h3>
+          <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.6;">Embed our senior engineers directly into your workflows to scale your internal capabilities instantly with specialized talent.</p>
+        </div>
+
+        <div class="addepto-card" style="position: relative; padding: 4rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--border-radius-sm);">
+           <span style="display: inline-block; width: 48px; height: 48px; background: rgba(31, 142, 61, 0.2); color: var(--accent-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 2rem;">🎯</span>
+          <h3 style="font-size: 2rem; margin-bottom: 1rem;">Fixed Price Project</h3>
+          <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.6;">Clear scope, predictable budget, and guaranteed high-quality deliverables mapped directly to your specific technical challenges.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Trust/Clients Row -->
+  <section class="bg-dark" style="padding: 6rem 0; text-align: center;">
+    <div class="container animate-fade-in">
+      <h3 style="color: var(--text-muted); font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 3rem;">Trusted by enterprise leaders</h3>
+      <div style="display: flex; justify-content: center; gap: 4rem; opacity: 0.5; font-size: 1.5rem; font-weight: 800; flex-wrap: wrap;">
+        <span>ACME CORP</span>
+        <span>GLOBEX</span>
+        <span>SOYLENT</span>
+        <span>INITECH</span>
+        <span>UMBRELLA</span>
+      </div>
+    </div>
+  </section>
+
+
+
+</Layout>

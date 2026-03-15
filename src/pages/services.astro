@@ -1,0 +1,124 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Services">
+  
+  <!-- 1. Dark Tech Hero Section -->
+  <section class="bg-dark" style="padding: 12rem 0 6rem; position: relative; overflow: hidden;">
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(180deg, rgba(11,11,11,0.5) 0%, rgba(11,11,11,1) 100%), url('/images/hero_services_1773592560437.png') no-repeat center center; background-size: cover; z-index: 0; opacity: 0.6;"></div>
+    
+    <div class="container relative z-10 animate-fade-in" style="max-width: 900px;">
+      <h1 style="font-size: 4.5rem; line-height: 1.05; margin-bottom: 2rem;">
+        Complete Data & AI <br/>Engineering Services
+      </h1>
+      <p style="color: var(--text-muted); font-size: 1.25rem; margin-bottom: 3rem; max-width: 700px;">
+        From building petabyte-scale data pipelines to integrating secure Generative AI models, we provide end-to-end technical execution for ambitious enterprises.
+      </p>
+      <a href="#services-grid" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">Explore our expertise &darr;</a>
+    </div>
+  </section>
+
+  <!-- 2. How we operate (3-step process) -->
+  <section class="bg-white" style="padding: 6rem 0; border-bottom: 1px solid var(--bg-light);">
+    <div class="container animate-fade-in">
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 4rem;">
+        <div>
+          <span style="display: block; font-size: 3rem; font-weight: 800; color: var(--bg-light); line-height: 1;">01</span>
+          <h3 style="font-size: 1.5rem; margin: 1rem 0 0.5rem;">Discover & Architect</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Deep technical audits of your existing infrastructure to map out a scalable, future-proof blueprint.</p>
+        </div>
+        <div>
+          <span style="display: block; font-size: 3rem; font-weight: 800; color: var(--bg-light); line-height: 1;">02</span>
+          <h3 style="font-size: 1.5rem; margin: 1rem 0 0.5rem;">Build & Integrate</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Agile deployment of clean, tested code and infrastructure by our senior engineering pods.</p>
+        </div>
+        <div>
+          <span style="display: block; font-size: 3rem; font-weight: 800; color: var(--bg-light); line-height: 1;">03</span>
+          <h3 style="font-size: 1.5rem; margin: 1rem 0 0.5rem;">Scale & Optimize</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Continuous performance tuning, cost-optimization, and SLA-backed support for production systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Core Services Grid -->
+  <section id="services-grid" class="bg-light" style="padding: 8rem 0;">
+    <div class="container animate-fade-in">
+      <h2 style="font-size: 3.5rem; margin-bottom: 4rem; text-align: center;">Our technical domains</h2>
+      
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem;">
+        
+        <!-- Service 1 -->
+        <div class="addepto-card" style="padding: 3rem;">
+          <img src="/images/service_data_1773592594540.png" alt="Data Engineering" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--border-radius-sm); margin-bottom: 2rem;" />
+          <h3 style="font-size: 2rem; margin-bottom: 1rem;">Data Engineering</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem;">We build robust, scalable data pipelines (ETL/ELT) that transform chaotic data silos into unified, query-ready data lakes and warehouses.</p>
+          <ul style="list-style: none; color: var(--text-dark); display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+            <li>✓ Apache Spark & Flink</li>
+            <li>✓ Snowflake & BigQuery</li>
+            <li>✓ dbt Data Modeling</li>
+            <li>✓ Airflow Orchestration</li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="addepto-card" style="padding: 3rem;">
+          <img src="/images/service_ai_1773592575907.png" alt="Artificial Intelligence" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--border-radius-sm); margin-bottom: 2rem;" />
+          <h3 style="font-size: 2rem; margin-bottom: 1rem;">Generative AI & ML</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Accelerate your AI adoption securely. We specialize in custom LLM integration, enterprise RAG architectures, and predictive modeling.</p>
+          <ul style="list-style: none; color: var(--text-dark); display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+            <li>✓ RAG Architectures</li>
+            <li>✓ Fine-tuning LLMs</li>
+            <li>✓ Vector Databases</li>
+            <li>✓ MLOps Pipelines</li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="addepto-card" style="padding: 3rem;">
+          <img src="/images/service_cloud_1773592611307.png" alt="Cloud Infrastructure" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--border-radius-sm); margin-bottom: 2rem;" />
+          <h3 style="font-size: 2rem; margin-bottom: 1rem;">Cloud Architecture</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Migrate and modernize your legacy applications with cloud-native architectures designed for high availability and elastic scalability.</p>
+          <ul style="list-style: none; color: var(--text-dark); display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+            <li>✓ AWS, GCP, Azure</li>
+            <li>✓ Serverless Computing</li>
+            <li>✓ Cloud Cost Optimization</li>
+            <li>✓ Disaster Recovery</li>
+          </ul>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="addepto-card" style="padding: 3rem;">
+          <div style="width: 100%; height: 200px; background: var(--bg-dark); border-radius: var(--border-radius-sm); margin-bottom: 2rem; display: flex; align-items: center; justify-content: center; font-size: 4rem;">🚀</div>
+          <h3 style="font-size: 2rem; margin-bottom: 1rem;">DevOps Solutions</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Automate your delivery lifecycle. We implement robust CI/CD pipelines, container orchestration, and Infrastructure as Code.</p>
+          <ul style="list-style: none; color: var(--text-dark); display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+            <li>✓ Kubernetes & Docker</li>
+            <li>✓ Terraform / IaC</li>
+            <li>✓ CI/CD Automation</li>
+            <li>✓ DevSecOps Compliance</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Tech Stack Banner -->
+  <section class="bg-dark" style="padding: 6rem 0; text-align: center;">
+    <div class="container animate-fade-in">
+      <h3 style="color: var(--text-muted); font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 3rem;">Technologies we master</h3>
+      <div style="display: flex; justify-content: center; gap: 4rem; opacity: 0.7; font-size: 1.5rem; font-weight: 600; flex-wrap: wrap; color: var(--bg-white);">
+        <span>Python</span>
+        <span>Apache Kafka</span>
+        <span>Snowflake</span>
+        <span>AWS</span>
+        <span>Databricks</span>
+        <span>Kubernetes</span>
+        <span>PyTorch</span>
+      </div>
+    </div>
+  </section>
+
+</Layout>

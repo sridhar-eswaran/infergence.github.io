@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Case Studies">
+  
+  <!-- 1. Dark Hero Section -->
+  <section class="bg-dark" style="padding: 12rem 0 8rem; text-align: center;">
+    <div class="container animate-fade-in">
+      <h1 style="font-size: 4rem; margin-bottom: 2rem;">Proven Impact</h1>
+      <p style="color: var(--text-muted); font-size: 1.25rem; max-width: 600px; margin: 0 auto;">Read how we've transformed leading enterprises with Data and AI solutions, delivering measurable ROI in months, not years.</p>
+    </div>
+  </section>
+
+  <!-- 2. Case Studies Grid -->
+  <section class="bg-light" style="padding: 8rem 0;">
+    <div class="container animate-fade-in">
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem;">
+        
+        <!-- Case Study 1 (Logistics) -->
+        <a href="#" class="addepto-card" style="padding: 0; overflow: hidden; display: block; text-decoration: none;">
+          <img src="/images/case_study_logistics_1773592215755.png" alt="Logistics Network" style="width: 100%; height: 300px; object-fit: cover; display: block;" />
+          <div style="padding: 3rem;">
+            <span style="color: var(--accent-green); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Global Logistics Provider</span>
+            <h3 style="font-size: 1.75rem; margin: 1rem 0; color: var(--text-dark);">Optimizing Routes with Real-time IoT Data Streaming</h3>
+            <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 1.5rem;">We built an Apache Kafka pipeline to ingest 10GB/s of telemetry data, reducing fuel consumption by 14% across a fleet of 5,000 vehicles.</p>
+            <span class="text-green" style="font-weight: 600;">Read Full Study &rarr;</span>
+          </div>
+        </a>
+
+        <!-- Case Study 2 (Finance) -->
+        <a href="#" class="addepto-card" style="padding: 0; overflow: hidden; display: block; text-decoration: none;">
+          <img src="/images/case_study_finance_1773592199327.png" alt="Financial Dashboard" style="width: 100%; height: 300px; object-fit: cover; display: block;" />
+          <div style="padding: 3rem;">
+            <span style="color: var(--accent-green); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Tier 1 Investment Bank</span>
+            <h3 style="font-size: 1.75rem; margin: 1rem 0; color: var(--text-dark);">Predictive Risk Analytics for Institutional Portfolios</h3>
+            <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 1.5rem;">Deployed a machine learning risk engine on AWS that analyzes market sentiment and structured transaction data in sub-second latency.</p>
+            <span class="text-green" style="font-weight: 600;">Read Full Study &rarr;</span>
+          </div>
+        </a>
+
+        <!-- Case Study 3 (Healthcare) -->
+        <a href="#" class="addepto-card" style="padding: 0; overflow: hidden; display: block; text-decoration: none;">
+          <img src="/images/solution_healthcare_1773592788255.png" alt="Healthcare Analytics" style="width: 100%; height: 300px; object-fit: cover; display: block;" />
+          <div style="padding: 3rem;">
+            <span style="color: var(--accent-green); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">National Health Network</span>
+            <h3 style="font-size: 1.75rem; margin: 1rem 0; color: var(--text-dark);">Unifying Siloed EMR Data into a Searchable Gen-AI Lake</h3>
+            <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 1.5rem;">Implemented an enterprise RAG architecture allowing clinicians to query decades of unstructured patient records securely and instantly.</p>
+            <span class="text-green" style="font-weight: 600;">Read Full Study &rarr;</span>
+          </div>
+        </a>
+
+        <!-- Case Study 4 (Cloud Migration) -->
+        <a href="#" class="addepto-card" style="padding: 0; overflow: hidden; display: block; text-decoration: none;">
+          <img src="/images/service_cloud_1773592611307.png" alt="Cloud Migration" style="width: 100%; height: 300px; object-fit: cover; display: block;" />
+          <div style="padding: 3rem;">
+            <span style="color: var(--accent-green); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">SaaS Unicorn</span>
+            <h3 style="font-size: 1.75rem; margin: 1rem 0; color: var(--text-dark);">Zero-Downtime Migration of a Monolith to Kubernetes</h3>
+            <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 1.5rem;">Refactored a legacy application into scalable microservices orchestrated via Kubernetes on GCP, reducing infrastructural costs by 35%.</p>
+            <span class="text-green" style="font-weight: 600;">Read Full Study &rarr;</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+</Layout>

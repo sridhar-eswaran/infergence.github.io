@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Solutions">
+  <!-- 1. Dark Hero -->
+  <section class="bg-dark" style="padding: 12rem 0 8rem; position: relative; overflow: hidden;">
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(180deg, rgba(11,11,11,0.5) 0%, rgba(11,11,11,1) 100%), url('/images/solutions_hero_1773592759306.png') no-repeat center center; background-size: cover; z-index: 0; opacity: 0.4;"></div>
+    
+    <div class="container relative z-10 animate-fade-in" style="max-width: 900px; text-align: center;">
+      <h1 style="font-size: 4rem; margin-bottom: 2rem;">Industry Solutions</h1>
+      <p style="color: var(--text-muted); font-size: 1.25rem; max-width: 600px; margin: 0 auto 3rem;">Pre-configured data frameworks and AI accelerators engineered for the specific demands of your sector.</p>
+    </div>
+  </section>
+
+  <!-- 2. Solutions Details -->
+  <section class="bg-white" style="padding: 8rem 0;">
+    <div class="container animate-fade-in">
+      
+      <!-- Financial Services -->
+      <div style="display: flex; gap: 4rem; align-items: center; margin-bottom: 8rem; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px;">
+          <span style="color: var(--accent-green); font-weight: 600; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">FINANCE & FINTECH</span>
+          <h2 style="font-size: 2.5rem; margin: 1rem 0 1.5rem;">Real-time Risk & Compliance Engines</h2>
+          <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem;">We deploy high-throughput streaming architectures that process transaction data in milliseconds to detect anomalies, prevent fraud, and ensure automated regulatory compliance reporting without slowing down the trading floor.</p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 2rem;">
+            <li>✓ Fraud Detection ML Models</li>
+            <li>✓ Algorithmic Trading Data Lakes</li>
+            <li>✓ Automated KYC/AML Pipelines</li>
+          </ul>
+          <a href="/case-studies" class="btn btn-outline">Read Finance Case Study</a>
+        </div>
+        <div style="flex: 1; min-width: 300px;">
+          <img src="/images/solution_finance_1773592772895.png" alt="Finance Tech" style="width: 100%; height: 400px; object-fit: cover; border-radius: var(--border-radius-sm);" />
+        </div>
+      </div>
+
+      <!-- Healthcare -->
+      <div style="display: flex; gap: 4rem; align-items: center; margin-bottom: 8rem; flex-wrap: wrap-reverse;">
+        <div style="flex: 1; min-width: 300px;">
+          <img src="/images/solution_healthcare_1773592788255.png" alt="Healthcare Tech" style="width: 100%; height: 400px; object-fit: cover; border-radius: var(--border-radius-sm);" />
+        </div>
+        <div style="flex: 1; min-width: 300px;">
+          <span style="color: var(--accent-green); font-weight: 600; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">HEALTHCARE & LIFE SCIENCES</span>
+          <h2 style="font-size: 2.5rem; margin: 1rem 0 1.5rem;">Secure Patient Data & Predictive Diagnostics</h2>
+          <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem;">Unify fragmented legacy EMR systems into HIPAA-compliant data lakes. We build predictive machine learning models to optimize patient outcomes and accelerate clinical trial data processing.</p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 2rem;">
+            <li>✓ HIPAA-Compliant Data Lakes</li>
+            <li>✓ Clinical Trial Analytics</li>
+            <li>✓ LLM-powered Medical Record Analysis</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Logistics / Supply Chain -->
+      <div style="display: flex; gap: 4rem; align-items: center; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px;">
+          <span style="color: var(--accent-green); font-weight: 600; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">LOGISTICS & SUPPLY CHAIN</span>
+          <h2 style="font-size: 2.5rem; margin: 1rem 0 1.5rem;">Global Supply Chain Optimization</h2>
+          <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem;">Ingest massive IoT telemetry data from global fleets to optimize routing, predict maintenance windows, and dynamically balance inventory through volatile demand cycles.</p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 2rem;">
+            <li>✓ IoT Telemetry Ingestion (Kafka)</li>
+            <li>✓ Predictive Maintenance Models</li>
+            <li>✓ Dynamic Route Optimization</li>
+          </ul>
+          <a href="/case-studies" class="btn btn-outline">Read Logistics Case Study</a>
+        </div>
+        <div style="flex: 1; min-width: 300px;">
+          <!-- Reusing the previously generated logistics case study image here for continuity -->
+          <img src="/images/case_study_logistics_1773592215755.png" alt="Logistics Network" style="width: 100%; height: 400px; object-fit: cover; border-radius: var(--border-radius-sm);" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</Layout>
